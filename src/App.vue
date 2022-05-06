@@ -6,6 +6,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-3 my-3 mx-3" v-for="(image, index) in images" :key="index">
+          <p>{{ image.timestamp }}</p>
           <img width="300" :src="image.src" alt="screenshot" />
         </div>
       </div>
