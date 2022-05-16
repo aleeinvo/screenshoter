@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <h1 class="display-1 text-center">ScreenShoter</h1>
-    <h2 class="display-2 text-center">{{ timer < 0 ? 'saving...' : timer }}</h2>
+    <!-- <h2 class="display-2 text-center">{{ timer < 0 ? 'saving...' : timer }}</h2> -->
 
     <div class="container">
       <div class="row">
@@ -29,13 +29,13 @@ export default {
       this.images.push(image);
     });
 
-    setInterval(() => {
-      this.timer--;
+    // setInterval(() => {
+    //   this.timer--;
 
-      if(this.timer <= -4) {
-        this.timer = 5;
-      }
-    }, 500);
+    //   if(this.timer <= -4) {
+    //     this.timer = 5;
+    //   }
+    // }, 500);
   },
 };
 </script>
